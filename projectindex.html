@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nerissa's Final Project</title>
+	<!--add in leaflet in your header, stylesheet and javascript-->
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+	<link rel="stylesheet" href="projectstylesheet.css"/>
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://d3js.org/topojson.v1.min.js"></script>
+		<script src="http://d3js.org/queue.v1.min.js"></script>
+</head>
+<body>
+	<h2>Where Do People Work? </h2>
+	
+	<select id="industryfilter">
+		<option selected disabled>Pick an Industry</option>
+  		<!--<option value=max> All Industries</option>!-->
+  		<option value=ind2 id="ind2"> Agriculture, forestry, fishing and hunting, and mining</option>
+  		<option value=ind3 id= "ind3"> Construction</option>
+  		<option value=ind4> Manufacturing</option>
+  		<option value=ind5> Wholesale Trade</option>
+  		<option value=ind6> Retail Trade </option>
+  		<option value=ind7> Transportation and warehousing, and utilities</option>
+  		<option value=ind8> Information </option>
+  		<option value=ind9> Finance and insurance, and real estate and rental and leasing</option>
+  		<option value=ind10> Professional, scientific, and management, and administrative and waste management</option>
+  		<option value=ind11> Educational services, and health care and social assistance</option>
+		<option value=ind12>Arts, entertainment, and recreation, and accommodation and food services</option>
+		<option value=ind13> Other services, except public administration</option>
+		<option value=ind14>Public administration</option>
+		<option value=unemp>Unemployed</option>	
+	<div style="text-align:center">Percent of Population within Industry</div>
+</select>
+		<!--add a place for your map to go!
+	<div id="mapid">INDUSTRY</div>!-->
+	<div id="mapid2"></div>
+
+
+	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+	<script type="text/javascript" src="libraries/jQuery/jquery-1.11.2.min.js"></script>
+  	<script type="text/javascript" src="libraries/underscore/underscore-min.js"></script>
+	<!--If I want state data, add this back in . NOT INCLUDING JSON HERE, was causing token : error
+	<script type="text/javascript" src="us-states.geojson"></script>
+	<script type="text/javascript" src="census2015_us_county.json"></script>
+	<script type="text/javascript" src="test.json"></script>-->
+	<script src="projectjavaCLEAN.js"></script>
+
+	
+
+
+
+	<!--!--><!--!--><!--!--><!--!--><!--
+	
+
+
+
+	<!--<button>Make Background Blue!!</button>
+	<button onclick='update()'>Animate!</button></p></div>-->
+	<div id="drop"></div>
+	
+
+<p> Source: Census Data, 5 year estimates, 2011-2015, Selected Economic Conditions, Table DP03. Data accessed December 8 2016 </p>
+
+
+<!--!--><!--!--><!--!--><!--!--><!--!--><!--!-->
+
+<!--
+Left to do: Make a dynamic legend that changes with the filter, same location
+
+
+
+
+
+
+
+
+
+<option value= "d.datacolumn"> </option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+<option></option>
+
+
+</select>
+-->
+
+
+
+	<!--<select id="filter">
+		<option selected disabled>Receiving Government Assistance</option>
+  		<option value=5> Earnings</option>
+  		<option value= "d.datacolumn"> Social Security</option>
+  		<option> Food Stamps</option>
+  		<option> Supplemental Security Income</option>
+  		<option> Cash Public Assistance</option>
+	</select>-->
+
+<!--
+<select id="occupation filter">
+<option selected disabled>Pick an occupation</option>
+<option>Management, business, science, and arts occupations</option>
+<option> Service occupations</option>
+<option> Sales and office occupations</option>
+<option> Natural resources, construction, and maintenance occupations</option>
+<option>Production, transportation, and material moving occupations</option>
+<option>Unemployment Rate</option>
+</select>
+!-->
+
+
+
+	<!--<<div style="text-align:center">
+		<h2 class="S1">Industry:</h2>
+		</div>
+	<select id="filter">
+		<option selected disabled>Select One</option>
+  		<option value=5> </option>
+  		<option value= d.> Manufacturing </option>
+  		<option> Trade </option>
+  		<option> </option>
+  		<option> </option>
+	</select>
+
+	select id="mySelect" onchange="change()">
+		<option selected disabled>Select One</option>
+  		<option value="Baked Potato">Favorite Food</option>
+  		<option value="I can't feel my face when I'm with you">Favorite Song</option>
+  		<option value="Dead Alive">Favorite Movie</option>
+  		<option value="Eating eyeballs">Favorite Hobby</option>
+	</select>--> 
+
+</body>
+
+<script>
+</script>
+
+</html>
+
+
+
+<!--Extra stuff here::
+	<link href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" rel="stylesheet" type="text/css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet-src.js"></script>
+	<!This is his library to create the animation path
+	<script src="L.Polyline.SnakeAnim.js"></script> 
+	-->
+
+
+<!--Create a button that onclick activates the snake function written below-->
