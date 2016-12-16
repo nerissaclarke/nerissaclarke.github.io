@@ -49,7 +49,7 @@ function ready(error, data, json) {
 
     colorIntensity.domain([
         d3.min(data, function(d) { return 0 ; }), 
-        d3.max(data, function(d) { return 25; })
+        d3.max(data, function(d) { return d.ind8; })
     ]);
 
     //Convert the csv data into numbers, from strings
