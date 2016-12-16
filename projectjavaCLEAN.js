@@ -254,7 +254,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                  return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -267,7 +267,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                                    return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -279,7 +279,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                                return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -292,7 +292,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                                return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -304,7 +304,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                                   return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -317,7 +317,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                                    return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -328,10 +328,10 @@ function drawMap (selectedIndustry){
               var value = d.properties.ind8
               if (value) {
                   return colorIntensity(value);
-                } else {
-                  return "black";
+                } else {return  colorIntensity(0);
+        
               }
-              console.log(value);
+                                console.log(value);
               });//End of fill opacity command
         };
 
@@ -342,7 +342,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                  return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -354,7 +354,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -367,7 +367,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                 return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -379,7 +379,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -392,7 +392,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                  return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -404,7 +404,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+               return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
@@ -417,7 +417,7 @@ function drawMap (selectedIndustry){
               if (value) {
                   return colorIntensity(value);
                 } else {
-                  return "black";
+                  return  colorIntensity(0);
               }
               console.log(value);
               });//End of fill opacity command
