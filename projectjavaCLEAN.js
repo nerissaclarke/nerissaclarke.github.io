@@ -32,7 +32,7 @@ function industryColor (d) {
                          "Darkblue"
              }
 //function to define a quantized scale to sort data values into buckets of opacity, 
-var colorIntensity = d3.scale.quantize().range(["0.1", "0.3",".75",".8","1"]);   
+var colorIntensity = d3.scale.quantize().range(["0.1", "0.3",".5",".75",".99"]);   
 
 //var color = d3.scale.quantize()
 //                    .range(["rgb(237,248,233)","rgb(186,228,179)","rgb(116,196,118)","rgb(49,163,84)","rgb(0,109,44)"])              
@@ -49,7 +49,7 @@ function ready(error, data, json) {
 
     colorIntensity.domain([
         d3.min(data, function(d) { return 0 ; }), 
-        d3.max(data, function(d) { return 35; })
+        d3.max(data, function(d) { return 25; })
     ]);
 
     //Convert the csv data into numbers, from strings
